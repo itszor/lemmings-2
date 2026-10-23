@@ -11,7 +11,7 @@ CFLAGS  ?= -O2 -g -w -fno-strict-aliasing $(if $(TRACE),-DRECOMP_TRACE)
 gensrc   = $(wildcard $(1)/code*.c) $(1)/entries.c
 GAMEOBJ := $(patsubst %.c,%.o,$(foreach d,gen gendisp genmodes genkris genmus,$(call gensrc,$(d)))) game.o
 INTROOBJ := $(patsubst %.c,%.o,$(foreach d,genintro genmodes,$(call gensrc,$(d)))) intro.o
-LIBS    := $(shell pkg-config --libs sdl3) -lm -lpthread
+LIBS    := $(shell pkg-config --libs sdl3) -ljpeg -lm -lpthread
 INC     := -I$(ROGER)/include
 
 all: lemmings2 l2intro

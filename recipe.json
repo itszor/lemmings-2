@@ -1,0 +1,129 @@
+{
+ "name": "lemmings-2",
+ "title": "Lemmings 2: The Tribes (DMA Design for Psygnosis, 1993; Archimedes conversion by Krisalis, 1994)",
+ "platform": "acorn-archimedes",
+ "doc": "A recipe: how to turn a user's own copy of the game into native executables. It holds no game data: the inputs are recognised by content (see $SS/tools/weave.py). Four discs; the known dumps (the JASPP .jfd set F1022800, TOSEC's four .adf) hold the same files, except that TOSEC's disk 1 also carries the Extend virus (!Boot, CodeRM, MonitorRM, OSextend in !Lemmings2), which is not copied.",
+ "inputs": {
+  "containers": {
+   "Lemmings 2 - The Tribes (1994) (Krisalis).zip": "9d8135a348638c75dfced88ac95534e9bec23fa36abc99fe69b928c5a628d219",
+   "Lemmings 2 The Tribes (1994) (Krisalis Software) F1022800.zip": "52ece50e08021dbc96ccb2aa59f992e42194c6a86e9ea12d48228c3bfa253a4f"
+  },
+  "formats": [
+   "adf",
+   "jfd",
+   "zip"
+  ]
+ },
+ "discs": [
+  {
+   "name": "intro",
+   "title": "Intro disc: !L2Intro (the introduction, a separate program)",
+   "known_images": [
+    "1c19cc8a57fb039d4fab955445e437797c02c778c3d5749e9215fa5196a3ee73",
+    "9fe79f744abaa668c594d65fed1654fe4c81eb5dc65bb57c0ce448cff56f47f9"
+   ],
+   "key_files": {
+    "!L2Intro/!Run": "9b06b55c0cf54301c9c9e8e1378b78d7f8cce31b51dd7ae0f2ffbe0427f5658b",
+    "!L2Intro/Filler": "5420ea47eeb60b8b9a67368a7062124ca832e678989d6e848141024bbdcc0c22",
+    "!L2Intro/GameModes": "65ee34fc1cae3355af18b57f80a9d9f165943234213803c44dbb97bbe471ae8c",
+    "!L2Intro/Intro": "5f6b9685ea8f965c4b225b9d2ce06c30a55ad36de17ec589e10fc5c257845345"
+   },
+   "game_dirs": [
+    "!L2Intro"
+   ]
+  },
+  {
+   "name": "disk1",
+   "title": "Disk 1: !Lemmings2 (loader, modules, !RunImage, title music) and Disk1",
+   "known_images": [
+    "13d6eb7b84eb09aa5fcdf1eeea8a11d55fb266defb680eae3a97f79761228756",
+    "9cf0e8e666ebaa61353c13e629572eca439025b9c50d1f0f7132f33d4589ddf0"
+   ],
+   "key_files": {
+    "!Lemmings2/!Run": "5819d94972d27db4299b92eb46fabd51067c845cf8647bf0f7722ef011d943dd",
+    "!Lemmings2/!RunImage": "ae418de99eff7534734fc3b944939af65ea2db3a6662eff00d7d2fe93a708456",
+    "!Lemmings2/DiskTest": "cf10ded128604ec7f7da671b7e70da73580d36987f95f84dd7f5db2102fb16e7",
+    "!Lemmings2/DispScreen": "4e8bc4618ab63521797e29f785fec7e4d606d33a3f09f40100ff52835c6d5a4b",
+    "!Lemmings2/GameModes": "65ee34fc1cae3355af18b57f80a9d9f165943234213803c44dbb97bbe471ae8c",
+    "!Lemmings2/Kris2": "71d4bdc6a6c180723553537a031892e022bf3aa731124f2ea8faa3a7d2c47077",
+    "!Lemmings2/Krisalis": "32154989e5870a85ebdc99b497c20741943f8d3b32dd76e158ad44ae1af4c41f",
+    "!Lemmings2/Lemtitle": "84f906b6a68fd2aba4512c8351bd30978b649da668c59836abe80d9ba8e74ac7",
+    "!Lemmings2/MUSMOD5": "7192b5810721532d909885e08d1346653af1250cb6474096da35e9186a29e5d4",
+    "!Lemmings2/RmMin": "7d578eea0b805f2dd51707fb5f8a557fc67a8fbe62115890cf20cc3d10ad4953",
+    "!Lemmings2/TSLOT": "c079fe2f42f0ccd45df6cb94bf00d9ac574f9f54d4956d54fd855530c84982c6",
+    "Disk1/l2DT": "8267b044f191f59b72f36ab7e4da71b658d9f9bb36a2f364fcd3c4e939cbe0b8",
+    "OldSystVGA": "9cfd979fb8f667b1fcaaa18acc5b428f5edb071989a317300888bb3ad66d9074"
+   },
+   "game_dirs": [
+    "!Lemmings2",
+    "Disk1"
+   ]
+  },
+  {
+   "name": "disk2",
+   "title": "Disk 2: disk2 (extra sound effects, for 4MB machines)",
+   "known_images": [
+    "592ff78278bd331fd24979bd1063c8b33a545e7f9463ff6ca628e20f33ed446f",
+    "782186425bf215f2ec697e513d5611bd0e7e3601e22863cc9d9d1509041f584d"
+   ],
+   "key_files": {
+    "disk2/L2EXTFX": "015517916dc253045d0fd7e8bda065c6fcc96a6745663809fcc6703631453dfc",
+    "disk2/l2DT": "8267b044f191f59b72f36ab7e4da71b658d9f9bb36a2f364fcd3c4e939cbe0b8"
+   },
+   "game_dirs": [
+    "disk2"
+   ]
+  },
+  {
+   "name": "disk3",
+   "title": "Disk 3: disk3 (tribe styles, music, end sequence)",
+   "known_images": [
+    "670cee4639e2b93d19df4c082528a835094bfc4d0d5777e316467cea2213f1b8",
+    "cd75ffa4491452c7ca223ca67b35ad0052cd3119260f8e204d5c987971601735"
+   ],
+   "key_files": {
+    "disk3/L2EXTFX2": "e17e97521f3b30c1a7c01fc0c2cc803a566d76a36c8c9185c5fe330c7ef857d2",
+    "disk3/LemClassic": "3d8714aeda893aaeccd4a69f64d8be76fab2c40b41d5b0bfd902483313c89d3f",
+    "disk3/Lemendanip": "625d2f3bb614cc42e15ad32a8c218efebf719fdc713f1a031bd9b3b274b41fd1",
+    "disk3/Lemmus": "d78291ca3b9677685e6429428e97a5dbaaf4de87edd000eed9d5e065a78f48fe",
+    "disk3/Lme": "a724c4d5d791d39db36e6cfc31828c9082fbaa88d1e0d207714cf81df7719b55",
+    "disk3/RmMin": "7d578eea0b805f2dd51707fb5f8a557fc67a8fbe62115890cf20cc3d10ad4953",
+    "disk3/beach/ASTYLE": "9cfac767b83da9605aeceee9998100c9e489b9f732152f66564cb82261595662",
+    "disk3/cavelem/ASTYLE": "b27256600d5aab793188aba3156275482c45b9bbad7c324b5d7c123fd97ba4e5",
+    "disk3/circus/ASTYLE": "33642d216507dbcecf3b6d2a16425512cd9dd4978e3deefeda3fe4872481822f",
+    "disk3/classic/ASTYLE": "7839c9126d585202f1412fd3fdcd2b4615cac98b81893117cdee64b6f1b559f7",
+    "disk3/egyptian/ASTYLE": "fcf038fca6f1b36f0ab15ddcf8023970bcb4a945c3f5c21b81bbdf1623ef7be6",
+    "disk3/highland/ASTYLE": "6add1483a1dc13fa7d032aa550de0b926e0ece5d2dd8597efed305ac2f60b08f",
+    "disk3/l2DT": "8267b044f191f59b72f36ab7e4da71b658d9f9bb36a2f364fcd3c4e939cbe0b8",
+    "disk3/medieval/ASTYLE": "ca569dd1f39fb7b0b32ff475f0910a17302bcd2748c553e1554b968310e81a99",
+    "disk3/outdoor/ASTYLE": "96805d91ea54ab260eca702e14636f713161cba25cf5e37286477158214c4922",
+    "disk3/polar/ASTYLE": "0a90c4c027ec5ee60c68e0d459507046e7fdd004bda6750396be20adf794172b",
+    "disk3/shadow/ASTYLE": "2afd38d5be186d82d8d082c9380228023c5a165a0db301c199de9950d2114aaa",
+    "disk3/space/ASTYLE": "608499a394cfa9425e98732f665a1f84d3a3ae887313940284ddc8af1e9f6c34",
+    "disk3/sports/ASTYLE": "fe865c3a547e94eee4e9b377b1802001d6ad33befc13ca990831342455ccd8a4"
+   },
+   "game_dirs": [
+    "disk3"
+   ]
+  }
+ ],
+ "build": [
+  "python3 -I \"$WEAVE\" extract . INPUTS",
+  "python3 -I tools/install.py",
+  "python3 -I tools/unpack.py",
+  "make -C recomp regen",
+  "make -C recomp"
+ ],
+ "output": "recomp/lemmings2",
+ "requires": {
+  "superspider": "~/stuff/superspider, or $SUPERSPIDER (dune build): analyse, gen, tools/weave.py, tools/arm2.py",
+  "libroger": "~/stuff/libroger, or make ROGER=...",
+  "host": [
+   "python3",
+   "ocaml + dune",
+   "gcc",
+   "SDL3 (pkg-config sdl3)"
+  ]
+ },
+ "run": "cd recomp && ./lemmings2   (the introduction: ./l2intro)"
+}
